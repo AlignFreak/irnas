@@ -1465,16 +1465,16 @@ if (typeof Object.create !== "function") {
         paginationSpeed : 800,
         rewindSpeed : 1000,
 
-        autoPlay : false,
-        stopOnHover : false,
+        autoPlay : 3500,
+        stopOnHover : true,
 
         navigation : false,
         navigationText : ["prev", "next"],
-        rewindNav : true,
+        rewindNav : false,
         scrollPerPage : false,
 
         pagination : true,
-        paginationNumbers : false,
+        paginationNumbers : true,
 
         responsive : true,
         responsiveRefreshRate : 200,

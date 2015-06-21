@@ -61,80 +61,72 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Spirit8</a>
+          <a class="navbar-brand" href="http://irnas.eu/" target="_blank" title="Irnas">Irnas</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#tf-home" class="page-scroll">Home</a></li>
+
+          <!-- {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %} -->
+
+            <li><a href="#tf-home" class="page-scroll">Start</a></li>
             <li><a href="#tf-about" class="page-scroll">About</a></li>
-            <li><a href="#tf-team" class="page-scroll">Team</a></li>
-            <li><a href="#tf-services" class="page-scroll">Services</a></li>
-            <li><a href="#tf-works" class="page-scroll">Portfolio</a></li>
-            <li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li>
-            <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
+            <li><a href="#tf-specs" class="page-scroll">Specs</a></li>
+            <li><a href="#tf-features" class="page-scroll">Features</a></li>
+            <li><a href="#tf-control" class="page-scroll">Control System</a></li>
+            <li><a href="#tf-copy" class="page-scroll">Copyright</a></li>
+            <!-- <li><a href="#tf-contact" class="page-scroll">Contact</a></li> -->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-    <!-- Home Page
+    <!-- Start
     ==========================================-->
     <div id="tf-home" class="text-center">
         <div class="overlay">
             <div class="content">
-                <h1>Welcome on <strong><span class="color">Spirit8</span></strong></h1>
-                <p class="lead">We are a digital agency with <strong>years of experience</strong> and with <strong>extraordinary people</strong></p>
+                <h1>GoodEnoughCNC-<strong><span class="color">PlasmaCutter</span></strong></h1>
+                <p class="lead">Good Enough CNC Plasma Cutter - <strong>very low cost and simple</strong>, suitable for everyone.</p>
                 <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
             </div>
         </div>
     </div>
 
-    <!-- About Us Page
+    <!-- About
     ==========================================-->
     <div id="tf-about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="{{ ASSET_PATH }}/img/02.png" class="img-responsive">
+                    <img src="{{ ASSET_PATH }}/img/work-in-progress.jpg" class="img-responsive">
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
                         <div class="section-title">
-                            <h4>About us</h4>
-                            <h2>Some words <strong>about us</strong></h2>
+                            <h4>Work-in-progress</h4>
+                            <h2>to be published soon.</h2>
                             <hr>
                             <div class="clearfix"></div>
                         </div>
-                        <p class="intro">We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
-                        <ul class="about-list">
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Mission</strong> - <em>We deliver uniqueness and quality</em>
-                            </li>
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Skills</strong> - <em>Delivering fast and excellent results</em>
-                            </li>
-                            <li>
-                                <span class="fa fa-dot-circle-o"></span>
-                                <strong>Clients</strong> - <em>Satisfied clients thanks to our experience</em>
-                            </li>
-                        </ul>
+                        <p class="intro">Industry in vast majority aims to use highest precision and reliability machines, to be capable of producing even the most complicated parts designers come up with. We are flipping such approach on its head, trading precision of manufacturing tools for simplicity and low cost of their construction, to reduce the entry barrier for using them in any environment.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Team Page
+    <!-- Specs
     ==========================================-->
-    <div id="tf-team" class="text-center">
+    <div id="tf-specs" class="text-center">
         <div class="overlay">
             <div class="container">
                 <div class="section-title center">
-                    <h2>Meet <strong>our team</strong></h2>
+                    <h2>Prototype Specifications</strong></h2>
+                    <p>Every machine can be tailored to size. The good enough CNC Plasma cutter is a parametric bootstrap machine.<br />Dimensions depend on the length of the profiles (Parameter L) and profile sizes. The specification below applies for L=1200mm profiles.</p>
                     <div class="line">
                         <hr>
                     </div>
@@ -143,88 +135,126 @@
                 <div id="team" class="owl-carousel owl-theme row">
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/01.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>Frame Metric</h3>
+                                <ul>
+                                    <li>40 mm steel tubes</li>
+                                    <li>3 mm thickness</li>
+                                    <li>Frame Imperial</li>
+                                    <li>1.5 inch steel tubes</li>
+                                    <li>11 gauge</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/02.jpg" alt="..." class="img-circle team-img">
+                            <!-- <img src="{{ ASSET_PATH }}/img/team/02.jpg" alt="..." class="img-circle team-img"> -->
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>Trolleys Metric</h3>
+                                <ul>
+                                    <li>100 mm steel tubes</li>
+                                    <li>3 mm thickness</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/03.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>Trolleys Imperial</h3>
+                                <ul>
+                                    <li>4 inch steel tubes</li>
+                                    <li>11 gauge</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/04.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>Footprint</h3>
+                                <ul>
+                                    <li>Width: L+220 mm</li>
+                                    <li>Length: L</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/04.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>Cutting area</h3>
+                                <ul>
+                                    <li>Width: L-400 mm</li>
+                                    <li>Length: L-500 mm</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/01.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>Z travel</h3>
+                                <ul>
+                                    <li>Height: Z axis<br />rod length - 170 mm</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/02.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>XY Motion system</h3>
+                                <ul>
+                                    <li>Timing belt and pulley<br />(T5 or HTD5M or HTD3M or GT2 [worst case] )</li>
+                                    <li>Nema 23 motors</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="thumbnail">
-                            <img src="{{ ASSET_PATH }}/img/team/03.jpg" alt="..." class="img-circle team-img">
                             <div class="caption">
-                                <h3>Jenn Gwapa</h3>
-                                <p>CEO / Founder</p>
-                                <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                                <h3>Z Motion system</h3>
+                                <ul>
+                                    <li>Threaded rod</li>
+                                    <li>Nema 17 motor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>Plasma</h3>
+                                <ul>
+                                    <li>Low cost hand held plasma<br />(BMF CUT 50M) or similar</li>
+                                    <li>THC (Torch height controller)</li>
+                                    <li>Compressor 30-100 l/min<br />at 2-4 bar – effective 180 l/min</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>CNC Controller</h3>
+                                <p>Any 4 channel CNC controller, tested:</p>
+                                <ul>
+                                    <li>Planet CNC MK3/4 USB Controller</li>
+                                    <li>Stepper drivers 2.5 A</li>
+                                    <li>24 or 48 VDC Power supply</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -234,346 +264,200 @@
         </div>
     </div>
 
-    <!-- Services Section
+    <!-- Features
     ==========================================-->
-    <div id="tf-services" class="text-center">
-        <div class="container">
-            <div class="section-title center">
-                <h2>Take a look at <strong>our services</strong></h2>
-                <div class="line">
-                    <hr>
-                </div>
-                <div class="clearfix"></div>
-                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
-            </div>
-            <div class="space"></div>
+    <div id="tf-features">
+        <div class="container first">
             <div class="row">
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-desktop"></i>
-                    <h4><strong>Web design</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <div class="col-md-6">
+                    <img src="{{ ASSET_PATH }}/img/simplicity.jpg" class="img-responsive">
                 </div>
-
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-mobile"></i>
-                    <h4><strong>Mobile Apps</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h4>Features</h4>
+                            <h2>Simplicity</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">Can be manufactured using a hand held drill and angle grinder. Non critical parts are 3D and can be made using other manufacturing processes.</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
 
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-camera"></i>
-                    <h4><strong>Photography</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h2>Frame</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">Low cost Square tubes are used as structural components and linear rails for trolleys. The frame is kept in rectangular position using two turnbuckles. Removing the turnbuckles allows folding the frame for easy transport.</p>
+                    </div>
                 </div>
+                <div class="col-md-6">
+                    <img src="{{ ASSET_PATH }}/img/frame.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ ASSET_PATH }}/img/frame2.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
 
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-bullhorn"></i>
-                    <h4><strong>Marketing</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ ASSET_PATH }}/img/trolleys.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h2>Trolleys</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">Low cost square tubes with holes for motor, bearing positions and tightening. Tightening mechanisms compensate for loose tolerances in hole positioning. The result is a exact fit on the frame.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ ASSET_PATH }}/img/trolleys2.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h2>Z Axis</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">Lighter and simpler to manufacture, the Z axis mechanism does not require milled parts like conventional solutions. The torch holder tightly locks the the torch in place without having to modify the handle.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ ASSET_PATH }}/img/z-axis.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ ASSET_PATH }}/img/plasma.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h2>Plasma</h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">The Chinese BMF CUT 50M plasma cutter packs more than enough punch to cleanly cut up to 5 mm sheet metal (10 mm max cut). Additionally a compressor and torch height controller is needed.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Clients Section
+    <!-- Control system
     ==========================================-->
-    <div id="tf-clients" class="text-center">
+    <div id="tf-control" class="text-center">
         <div class="overlay">
             <div class="container">
 
                 <div class="section-title center">
-                    <h2>Some of <strong>our Clients</strong></h2>
+                    <h2>Control system</h2>
                     <div class="line">
                         <hr>
                     </div>
                 </div>
-                <div id="clients" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="{{ ASSET_PATH }}/img/client/01.png">
-                    </div>
-                    <div class="item">
-                        <img src="{{ ASSET_PATH }}/img/client/02.png">
-                    </div>
-                    <div class="item">
-                        <img src="{{ ASSET_PATH }}/img/client/03.png">
-                    </div>
-                    <div class="item">
-                        <img src="{{ ASSET_PATH }}/img/client/04.png">
-                    </div>
-                    <div class="item">
-                        <img src="{{ ASSET_PATH }}/img/client/05.png">
-                    </div>
-                    <div class="item">
-                        <img src="{{ ASSET_PATH }}/img/client/06.png">
-                    </div>
-                    <div class="item">
-                        <img src="{{ ASSET_PATH }}/img/client/07.png">
-                    </div>
-                </div>
-
+                <p>A number of different CNC controller systems may be applied to this machine. Additionally we have developed an unique fibre optics based interface for the plasma cutter itself, reducing the cost of adding a Torch Height Controller with our custom design, enabling cutting of warped or corrugated surfaces.</p>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Section
+    <!-- Copyright
     ==========================================-->
-    <div id="tf-works">
-        <div class="container"> <!-- Container -->
-            <div class="section-title text-center center">
-                <h2>Take a look at <strong>our services</strong></h2>
-                <div class="line">
-                    <hr>
-                </div>
-                <div class="clearfix"></div>
-                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
-            </div>
-            <div class="space"></div>
-
-            <div class="categories">
-                
-                <ul class="cat">
-                    <li class="pull-left"><h4>Filter by Type:</h4></li>
-                    <li class="pull-right">
-                        <ol class="type">
-                            <li><a href="#" data-filter="*" class="active">All</a></li>
-                            <li><a href="#" data-filter=".web">Web Design</a></li>
-                            <li><a href="#" data-filter=".photography">Photography</a></li>
-                            <li><a href="#" data-filter=".app" >Mobile App</a></li>
-                            <li><a href="#" data-filter=".branding" >Branding</a></li>
-                        </ol>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-
-            <div id="lightbox" class="row">
-
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/01.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 photography app">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/02.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/03.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/04.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/05.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 app">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/06.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 photography web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/07.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3 web">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="#">
-                                <div class="hover-text">
-                                    <h4>Logo Design</h4>
-                                    <small>Branding</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                                <img src="{{ ASSET_PATH }}/img/portfolio/08.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Testimonials Section
-    ==========================================-->
-    <div id="tf-testimonials" class="text-center">
+    <div id="tf-copy" class="text-left">
         <div class="overlay">
             <div class="container">
                 <div class="section-title center">
-                    <h2><strong>Our clients’</strong> testimonials</h2>
-                    <div class="line">
-                        <hr>
-                    </div>
+                    <h2>Copyright</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div id="testimonial" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                                <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                            </div>
-
-                            <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                                <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                            </div>
-
-                            <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
-                                <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p>Copyright Institute IRNAS Rače 2015.<br/><br/>This documentation describes Open Hardware and is licensed under the <a href="http://ohwr.org/cernohl" target="_blank">CERN OHL v. 1.2.</a> You may redistribute and modify this documentation under the terms of the CERN OHL v.1.2.. This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions.<br/><br/>Any firmware and software are licensed under <a href="http://www.gnu.org/licenses/" target="_blank">GNU General Public License.<br/><br/>Any text and documentation are licensed under Creative Commons BY-SA <a href="https://github.com/idleberg/Creative-Commons-Markdown/blob/spaces/4.0/by-sa.markdown" target="_blank">Attribution-ShareAlike</a></p><br /><br />
             </div>
         </div>
     </div>
 
     <!-- Contact Section
     ==========================================-->
-    <div id="tf-contact" class="text-center">
-        <div class="container">
+<!--     <div id="tf-contact" class="text-center">
+    <div class="container">
 
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
 
-                    <div class="section-title center">
-                        <h2>Feel free to <strong>contact us</strong></h2>
-                        <div class="line">
-                            <hr>
-                        </div>
-                        <div class="clearfix"></div>
-                        <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>            
+                <div class="section-title center">
+                    <h2>Feel free to <strong>contact us</strong></h2>
+                    <div class="line">
+                        <hr>
                     </div>
-
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Message</label>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn tf-btn btn-default">Submit</button>
-                    </form>
-
+                    <div class="clearfix"></div>
+                    <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>            
                 </div>
-            </div>
 
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Message</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn tf-btn btn-default">Submit</button>
+                </form>
+
+            </div>
         </div>
+
     </div>
+</div> -->
 
     <nav id="footer">
         <div class="container">
-            <div class="pull-left fnav">
-                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2014. Designed by <a href="https://dribbble.com/shots/1817781--FREEBIE-Spirit8-Digital-agency-one-page-template">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira</a></p>
+            <div class="text-center">
+                <p>Copyright IRNAS © 2015.</p>
             </div>
-            <div class="pull-right fnav">
+            <!-- <div class="pull-right fnav">
                 <ul class="footer-social">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </nav>
 
@@ -594,61 +478,3 @@
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/main.js"></script>
   </body>
 </html>
-
-
-<!-- 
- <body>
-    <div id="wrap">
-      <nav class="navbar navbar-default" role="navigation">
-        /* Brand and toggle get grouped for better mobile display */
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        </div>
-
-        /* Collect the nav links, forms, and other content for toggling */
-        <div class="collapse navbar-collapse" id="jb-navbar-collapse">
-          <ul class="nav navbar-nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>/* /.navbar-collapse */
-      </nav>
-
-      <div class="container">
-        {{ content }}
-      </div>
-
-    </div>
-
-    <div id="footer">
-      <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
-        </p>
-      </div>
-    </div>
-
-    {% include JB/analytics %}
-
-
-    /* Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) */
-    /* Placed at the end of the document so the pages load faster */
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
-  </body>
-</html>
--->
