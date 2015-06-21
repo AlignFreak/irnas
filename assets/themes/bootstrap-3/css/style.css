@@ -84,15 +84,16 @@ text-transform: uppercase;
 font-size: 22px;
 color: #fff;
 font-weight: 900;
+padding-top: 0;
 }
 
-#tf-menu a.navbar-brand:after {
+/* #tf-menu a.navbar-brand:after {
 	content: '\f08e';
 	font-family: FontAwesome;
 	margin-left: 5px;
 	font-size: 75%;
 	font-weight: normal;
-}
+} */
 
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -593,3 +594,108 @@ nav#footer p{
 	background: #6BAF37;
 	border-color: #6BAF37;
 	color: #ffffff;
+}
+
+.image_caption {
+	bottom: 0;
+	background-color: rgba(0,0,0,.35);
+	padding: 10px;
+	color: #fff;
+	font-size: 13px;
+	font-style: italic;
+	display: block;
+	position: absolute;
+	max-width: 700px;
+}
+
+.table > thead > tr > th {
+	text-align: center;
+	color: #6BAF37;
+	border: none;
+	background: rgba(0,0,0,.35);
+}
+
+.table > tbody > tr > td {
+	border: none;
+}
+
+.about-text {
+	margin-top: 25px;
+}
+
+.navbar-fixed-top .navbar-right {
+	margin-top: 8px;
+}
+
+#tf-menu.navbar-fixed-top a.navbar-brand {
+	padding: 7px 0;
+}
+
+#tf-newsletter {
+	background: #6BAF37;
+}
+
+#mc_embed_signup {
+	background: none;
+	margin: 25px 0;
+}
+
+#mc_embed_signup form {
+	padding: 0 !important;
+	width: 100%;
+}
+
+#mc_embed_signup h2 {
+	font-weight: 500 !important;
+	margin: 0 !important;
+	font-size: 30px !important;
+	color: #fff;
+	text-transform: none;
+}
+
+#mc_embed_signup #mce-success-response,
+#mc_embed_signup #mce-error-response,
+#mc_embed_signup .mc-field-group label,
+#mc_embed_signup .indicates-required {
+	color: #fff !important;
+}
+
+#mc_embed_signup .mc-field-group label {
+	font-size: 16px !important;
+}
+
+#mc_embed_signup div.response {
+	padding: 0 !important;
+}
+
+#mc_embed_signup .asterisk {
+	color: #5a5a5a !important;
+}
+
+#mc_embed_signup .button {
+	background: #fff !important;
+	color: #6BAF37 !important;
+	border: none !important;
+	border-radius: 0 !important;
+	display: block !important;
+	font-size: 25px !important;
+	height: 70px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 200px !important;
+	line-height: normal !important;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+
+#mc_embed_signup .button:hover {
+	background: #5a5a5a !important;
+	color: #fff !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+	clear: both !important;
+}

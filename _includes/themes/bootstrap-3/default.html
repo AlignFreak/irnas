@@ -23,6 +23,8 @@
     <link href="{{ ASSET_PATH }}/css/responsive.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/fonts/font-awesome/css/font-awesome.css">
 
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
@@ -61,22 +63,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://irnas.eu/" target="_blank" title="Irnas">Irnas</a>
+          <a class="navbar-brand" href="http://irnas.eu/" target="_blank" title="Irnas"><img src="{{ ASSET_PATH }}/img/IRNASlogo.png" class="img-responsive"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-
-          <!-- {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %} -->
-
             <li><a href="#tf-home" class="page-scroll">Start</a></li>
             <li><a href="#tf-about" class="page-scroll">About</a></li>
             <li><a href="#tf-specs" class="page-scroll">Specs</a></li>
             <li><a href="#tf-features" class="page-scroll">Features</a></li>
             <li><a href="#tf-control" class="page-scroll">Control System</a></li>
+            <li><a href="https://github.com/IRNAS/GoodEnoughCNC-PlasmaCutter" target="_blank">Source files</a></li>
+            <li><a href="#tf-newsletter" class="page-scroll">Newsletter</a></li>
             <li><a href="#tf-copy" class="page-scroll">Copyright</a></li>
             <!-- <li><a href="#tf-contact" class="page-scroll">Contact</a></li> -->
           </ul>
@@ -103,6 +102,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/work-in-progress.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
@@ -122,146 +122,103 @@
     <!-- Specs
     ==========================================-->
     <div id="tf-specs" class="text-center">
-        <div class="overlay">
-            <div class="container">
-                <div class="section-title center">
-                    <h2>Prototype Specifications</strong></h2>
-                    <p>Every machine can be tailored to size. The good enough CNC Plasma cutter is a parametric bootstrap machine.<br />Dimensions depend on the length of the profiles (Parameter L) and profile sizes. The specification below applies for L=1200mm profiles.</p>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
-
-                <div id="team" class="owl-carousel owl-theme row">
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Frame Metric</h3>
-                                <ul>
-                                    <li>40 mm steel tubes</li>
-                                    <li>3 mm thickness</li>
-                                    <li>Frame Imperial</li>
-                                    <li>1.5 inch steel tubes</li>
-                                    <li>11 gauge</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <!-- <img src="{{ ASSET_PATH }}/img/team/02.jpg" alt="..." class="img-circle team-img"> -->
-                            <div class="caption">
-                                <h3>Trolleys Metric</h3>
-                                <ul>
-                                    <li>100 mm steel tubes</li>
-                                    <li>3 mm thickness</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Trolleys Imperial</h3>
-                                <ul>
-                                    <li>4 inch steel tubes</li>
-                                    <li>11 gauge</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Footprint</h3>
-                                <ul>
-                                    <li>Width: L+220 mm</li>
-                                    <li>Length: L</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Cutting area</h3>
-                                <ul>
-                                    <li>Width: L-400 mm</li>
-                                    <li>Length: L-500 mm</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Z travel</h3>
-                                <ul>
-                                    <li>Height: Z axis<br />rod length - 170 mm</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>XY Motion system</h3>
-                                <ul>
-                                    <li>Timing belt and pulley<br />(T5 or HTD5M or HTD3M or GT2 [worst case] )</li>
-                                    <li>Nema 23 motors</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Z Motion system</h3>
-                                <ul>
-                                    <li>Threaded rod</li>
-                                    <li>Nema 17 motor</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Plasma</h3>
-                                <ul>
-                                    <li>Low cost hand held plasma<br />(BMF CUT 50M) or similar</li>
-                                    <li>THC (Torch height controller)</li>
-                                    <li>Compressor 30-100 l/min<br />at 2-4 bar – effective 180 l/min</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>CNC Controller</h3>
-                                <p>Any 4 channel CNC controller, tested:</p>
-                                <ul>
-                                    <li>Planet CNC MK3/4 USB Controller</li>
-                                    <li>Stepper drivers 2.5 A</li>
-                                    <li>24 or 48 VDC Power supply</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+    	<div class="overlay">
+    		<div class="container">
+    			<div class="section-title center">
+    				<div class="table-responsive">
+    					<table class="table">
+    						<thead>
+    							<tr>
+    								<th>Frame Metric</th>
+    								<th>Trolleys Metric</th>
+    								<th>Trolleys Imperial</th>
+    								<th>Footprint</th>
+    								<th>Cutting area</th>
+    							</tr>
+    						</thead>
+    						<tbody>
+    							<tr>
+    								<td>40 mm steel tubes</td>
+    								<td>100 mm steel tubes</td>
+    								<td>4 inch steel tubes</td>
+    								<td>Width: L+220 mm</td>
+    								<td>Width: L-400 mm</td>
+    							</tr>
+    							<tr>
+    								<td>3 mm thickness</td>
+    								<td>3 mm thickness</td>
+    								<td>11 gauge</td>
+    								<td>Length: L</td>
+    								<td>Length: L-500 mm</td>
+    							</tr>
+    							<tr>
+    								<td>Frame Imperial</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    							</tr>
+    							<tr>
+    								<td>1.5 inch steel tubes</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    							</tr>
+    							<tr>
+    								<td>11 gauge</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    							</tr>
+    						</tbody>
+    					</table>
+    					<table class="table">
+    						<thead>
+    							<tr>
+    								<th>Z travel</th>
+    								<th>XY Motion system</th>
+    								<th>Z Motion system</th>
+    								<th>Plasma</th>
+    								<th>CNC Controller</th>
+    							</tr>
+    						</thead>
+    						<tbody>
+    							<tr>
+    								<td>Height: Z axis rod length - 170 mm</td>
+    								<td>Timing belt and pulley (T5 or HTD5M<br />or HTD3M or GT2 [worst case])</td>
+    								<td>Threaded rod</td>
+    								<td>Low cost hand held plasma<br />(BMF CUT 50M) or similar</td>
+    								<td>Any 4 channel CNC controller, tested:</td>
+    							</tr>
+    							<tr>
+    								<td>&nbsp;</td>
+    								<td>Nema 23 motors</td>
+    								<td>Nema 17 motor</td>
+    								<td>THC (Torch height controller)</td>
+    								<td>Planet CNC MK3/4 USB Controller</td>
+    							</tr>
+    							<tr>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>Compressor 30-100 l/min at<br />2-4 bar – effective 180 l/min</td>
+    								<td>Stepper drivers 2.5 A</td>
+    							</tr>
+    							<tr>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>&nbsp;</td>
+    								<td>24 or 48 VDC Power supply</td>
+    							</tr>
+    						</tbody>
+    					</table>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
     </div>
 
     <!-- Features
@@ -271,6 +228,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/simplicity.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
@@ -301,9 +259,11 @@
                 </div>
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/frame.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/frame2.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
             </div>
         </div>
@@ -313,6 +273,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/trolleys.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
@@ -326,6 +287,7 @@
                 </div>
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/trolleys2.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
             </div>
         </div>
@@ -345,6 +307,7 @@
                 </div>
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/z-axis.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
             </div>
         </div>
@@ -354,6 +317,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <img src="{{ ASSET_PATH }}/img/plasma.jpg" class="img-responsive">
+                    <span class="image_caption">Molestias non veritatis voluptatem, reiciendis asperiores adipisci in cumque consequatur ab possimus expedita.</span>
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
@@ -395,6 +359,53 @@
                     <h2>Copyright</h2>
                 </div>
                 <p>Copyright Institute IRNAS Rače 2015.<br/><br/>This documentation describes Open Hardware and is licensed under the <a href="http://ohwr.org/cernohl" target="_blank">CERN OHL v. 1.2.</a> You may redistribute and modify this documentation under the terms of the CERN OHL v.1.2.. This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions.<br/><br/>Any firmware and software are licensed under <a href="http://www.gnu.org/licenses/" target="_blank">GNU General Public License.<br/><br/>Any text and documentation are licensed under Creative Commons BY-SA <a href="https://github.com/idleberg/Creative-Commons-Markdown/blob/spaces/4.0/by-sa.markdown" target="_blank">Attribution-ShareAlike</a></p><br /><br />
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter
+    ==========================================-->
+    <div id="tf-newsletter" class="text-center">
+        <div class="overlay">
+            <div class="container">
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+	            <form action="//irnas.us11.list-manage.com/subscribe/post?u=b5c1933275a02f111e7bf5c55&amp;id=1d5c8bec9c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	            	<div id="mc_embed_signup_scroll">
+	            		<h2>Subscribe to be updated about Good Enough machines</h2>
+	            		<div class="indicates-required">
+	            			<span class="asterisk">*</span>indicates required
+	            		</div>
+	            		<div class="mc-field-group">
+	            			<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+	            			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+	            		</div>
+	            		<div id="mce-responses" class="clear">
+	            			<div class="response" id="mce-error-response" style="display:none"></div>
+	            			<div class="response" id="mce-success-response" style="display:none"></div>
+	            		</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	            		<div style="position: absolute; left: -5000px;"><input type="text" name="b_b5c1933275a02f111e7bf5c55_1d5c8bec9c" tabindex="-1" value=""></div>
+	            		<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	            	</div>
+	            </form>
+			</div>
+			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+			<script type='text/javascript'>
+				(function($) {
+					window.fnames = new Array();
+					window.ftypes = new Array();
+					fnames[0]='EMAIL';
+					ftypes[0]='email';
+					fnames[1]='FNAME';
+					ftypes[1]='text';
+					fnames[2]='LNAME';
+					ftypes[2]='text';
+				} (jQuery));
+				var $mcj = jQuery.noConflict(true);
+			</script>
+			<!--End mc_embed_signup-->
+
             </div>
         </div>
     </div>
