@@ -8,14 +8,11 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Irnas
-tagline: Site Tagline
+title : GoodEnoughCNC-PlasmaCutter
+tagline: Good Enough CNC Plasma Cutter - very low cost and simple, suitable for everyone.
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Irnas
+  email : info@irnas.eu
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
