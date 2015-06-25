@@ -68,17 +68,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#tf-home" class="page-scroll">Start</a></li>
-            <li><a href="#tf-about" class="page-scroll">About</a></li>
-            <li><a href="#tf-specs" class="page-scroll">Specs</a></li>
-            <li><a href="#tf-features" class="page-scroll">Features</a></li>
-            <li><a href="#tf-control" class="page-scroll">Control System</a></li>
-            <li><a href="https://github.com/IRNAS/GoodEnoughCNC-PlasmaCutter" target="_blank">Source files</a></li>
-            <li><a href="#tf-copy" class="page-scroll">Copyright</a></li>
-            <li><a href="#tf-newsletter" class="page-scroll">Newsletter</a></li>
-            <!-- <li><a href="#tf-contact" class="page-scroll">Contact</a></li> -->
-          </ul>
+            {% include _nav.html %}
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -88,9 +78,7 @@
     <div id="tf-home" class="text-center">
         <div class="overlay">
             <div class="content">
-                <h1>GoodEnoughCNC-<strong><span class="color">PlasmaCutter</span></strong></h1>
-                <p class="lead">Good Enough CNC Plasma Cutter - <strong>very low cost and simple</strong>, suitable for everyone.</p>
-                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+                {% include start.html %}
             </div>
         </div>
     </div>
@@ -201,20 +189,9 @@
 
     <nav id="footer">
         <div class="container">
-            <div class="text-center">
-                <p>Copyright IRNAS © 2015.</p>
-            </div>
-            <!-- <div class="pull-right fnav">
-                <ul class="footer-social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-            </div> -->
+            {% include footer.html %}
         </div>
     </nav>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
